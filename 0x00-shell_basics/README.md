@@ -1,1 +1,1 @@
-thes is 0x00. Shell, basics task
+script that prints the absolute path name of the current working directoryk
