@@ -1,6 +1,6 @@
-#  Creat a mainfest that fix all termintion of phpp.
+# Fixes bad `phpp` extensions to `php` in the WordPress file `wp-settings.php`.
 
-exec  { 'fix_phpp':
-command => 'sed -i s/phpp/php/g /var/www/hml/wp-setting.php',
-path => ['/bin', '/usr/bin/', '/usr/local/bin'],
+exec { 'fix-wordpress':
+  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+  path    => '/usr/local/bin/:/bin/'
 }
